@@ -4,6 +4,8 @@ import 'package:url_launcher/url_launcher.dart';
 class ResumeScreen extends StatelessWidget {
   final String resumeUrl = "https://your-resume-link.pdf";
 
+  const ResumeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

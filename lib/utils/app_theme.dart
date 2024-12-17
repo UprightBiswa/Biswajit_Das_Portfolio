@@ -3,24 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   static final lightTheme = ThemeData(
-    colorScheme: ColorScheme.light(
-      primary: Colors.blue,
-      secondary: Colors.pink,
+    colorScheme: const ColorScheme.light(
+      primary: Colors.grey,
     ),
     brightness: Brightness.light,
-    primarySwatch: Colors.blue,
+    primarySwatch: Colors.grey,
     textTheme: GoogleFonts.poppinsTextTheme(),
     scaffoldBackgroundColor: Colors.white,
-  );
-
-  static final darkTheme = ThemeData(
-    colorScheme: ColorScheme.dark(
-      primary: Colors.teal,
-      secondary: Colors.pink,
-    ),
-    brightness: Brightness.dark,
-    primarySwatch: Colors.teal,
-    textTheme: GoogleFonts.poppinsTextTheme(),
-    scaffoldBackgroundColor: Colors.black,
   );
 }

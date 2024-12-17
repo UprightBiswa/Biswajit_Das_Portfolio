@@ -25,42 +25,40 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.green.shade50,
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
-          child: Column(
-            children: [
-              const Text(
-                'About Me',
-                style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 20),
-              Row(
-                children: [
-                  Expanded(
-                    child: _buildLeftSection(),
-                  ),
-                  Container(
-                    width: 3,
-                    color: Colors.blue,
-                    height: 600,
-                  ),
-                  Expanded(
-                    child: _buildRightSection(),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              const Text(
-                'Skills',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              _buildSkillBar('Flutter', 0.85),
-              _buildSkillBar('Firebase', 0.8),
-              _buildSkillBar('Angular', 0.7),
-              _buildSkillBar('Django REST API', 0.75),
-            ],
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
+        child: Column(
+          children: [
+            const Text(
+              'About Me',
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 20),
+            Row(
+              children: [
+                Expanded(
+                  child: _buildLeftSection(),
+                ),
+                Container(
+                  width: 3,
+                  color: Colors.blue,
+                  height: 600,
+                ),
+                Expanded(
+                  child: _buildRightSection(),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              'Skills',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            _buildSkillBar('Flutter', 0.85),
+            _buildSkillBar('Firebase', 0.8),
+            _buildSkillBar('Angular', 0.7),
+            _buildSkillBar('Django REST API', 0.75),
+          ],
         ),
       ),
     );
